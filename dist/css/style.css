@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:medium;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(158, 79, 231);
+}
+
+.welcome_text{
+    width: 400px;
+}
+
+
+.welcome_form input,
+.welcome_form button{
+    display: block;
+    width: 100%;
+}
+
+.welcome_form input {
+    margin-bottom : 15px;
+    border : none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.welcome_form button{
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: 0.5 all;
+    color: rgb(158, 79, 231);
+}
+
+.welcome_form button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline: none;
+
+}
+
+.quiz{
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows:60px auto ;
+    width: 800px;
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.quiz_header{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px ;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quiz_body{
+    background-color: #dddddd;
+    padding: 30px;
+    
+    color: rgb(158, 79, 231);
+}
+.quiz_user{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.quiz_timer{
+    display: flex;
+    align-items: center ;
+    background-color: rgb(158, 79, 231);
+    padding: 0 30px;
+    color: #ffffff;
+}
+.option_group{
+    list-style-type: none;
+}
+.option{
+    background-color: #ffffff;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: solid 2px transparent;
+    color: rgb(158, 79, 231);
+}
+.option:hover{
+    cursor:pointer;
+    border: solid 2px rgb(158, 79, 231);
+}
+.btn-next{
+    background-color: rgb(158, 79, 231);
+    color: #ffffff;
+    padding: 15px 35px;border: none;
+    border-radius: 25px;
+    transition: 0.4s all;
+}
+.btn-next:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(158, 79, 231);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    
+}
+
+.active{
+    background-color: rgb(158, 79, 231);
+    color: #ffffff !important;
+}
+
+.username,
+.userpoints,
+.usertime{
+color: #ffffff;
+text-align: center;
+margin-top: 15px;
+}
